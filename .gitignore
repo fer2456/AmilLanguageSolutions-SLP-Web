@@ -1,0 +1,38 @@
+# Configuraciones de entorno
+.env
+.env.local
+.env.production
+.env.development
+
+# Archivos de bases de datos (por seguridad)
+*.sql
+*.sqlite
+*.db
+
+# Archivos sensibles de configuración (si se usan)
+config.php
+database.php
+
+# Directorios de dependencias (si usas Composer u otro)
+vendor/
+
+# Archivos del entorno de desarrollo
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Cachés y archivos temporales
+cache/
+*.log
+*.tmp
+*.bak
+*.cache
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos ocultos de editores
+*.swp
+*.swo
