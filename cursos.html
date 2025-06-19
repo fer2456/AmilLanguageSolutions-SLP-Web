@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amil Language Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estilos_completos.css">
+</head>
+<script type="text/javascript">
+  (function () {
+    var options = {
+      whatsapp: "524443111711",
+      call_to_action: "¿Tienes dudas? ¡Chatea con nosotros!",
+      position: "right",
+    };
+    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+
+<body>
+  <header>
+    <div class="logo">
+        <img src="imgA/amil.png" class="amil">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cursos.html" class="activo">Cursos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="courses-section">
+    <h2>Elige el curso de tu interés</h2>
+    <p>Inglés desde cero hasta avanzado</p>
+    <div class="cards-container">
+        
+        <div class="card">
+            <div class="card-content">
+                <img src="imgA/cOnline.png" alt="">
+                <h3>Clases Online</h3>
+                <p>Sin salir de casa</p>
+                <button onclick="abrirModal('modalOnline')" class="btn">Quiero saber más</button>
+            </div>
+        </div>
+
+
+        
+        <!-- Tarjeta -->
+        <div class="card">
+            <div class="card-content">
+                <img src="imgA/cNiños.png" alt="">
+                <h3>Clases para Niños</h3>
+                <p>Clases dinámicas y eficaces</p>
+                <button onclick="abrirModal('modalNinos')" class="btn">Quiero saber más</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modalNinos" class="modal">
+            <div class="modal-content">
+                <span class="cerrar" onclick="cerrarModal('modalNinos')">&times;</span>
+                <h2>Inglés para Niños</h2>
+                <p>Clases lúdicas, con juegos, canciones y profesores especializados en edades de 5 a 12 años.</p>
+                <ul>
+                <li>🎨 Actividades interactivas</li>
+                <li>📅 Clases entre semana o fines de semana</li>
+                <li>👩‍🏫 Profesores con experiencia en educación infantil</li>
+                </ul>
+                <a href="contacto.html" class="btn">Solicita más información</a>
+            </div>
+            </div>
+            
+            <div class="card">
+            <div class="card-content">
+                <img src="imgA/cGrupal.png" alt="">
+                <h3>Clases Grupales</h3>
+                <p>Hasta 5 alumnos</p>
+                <button onclick="abrirModal('modalGrupal')" class="btn">Preinscribirme</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modalGrupal" class="modal">
+            <div class="modal-content">
+                <span class="cerrar" onclick="cerrarModal('modalGrupal')">&times;</span>
+                <h2>Preinscripción a Clases Grupales</h2>
+                <form action="https://formsubmit.co/tucorreo@email.com" method="POST">
+                <label>Nombre completo:</label>
+                <input type="text" name="nombre" required>
+                <label>Correo electrónico:</label>
+                <input type="email" name="correo" required>
+                <label>Nivel de inglés:</label>
+                <select name="nivel">
+                    <option>Principiante</option>
+                    <option>Intermedio</option>
+                    <option>Avanzado</option>
+                </select>
+                <br><br>
+                <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Tarjeta -->
+        <div class="card">
+            <div class="card-content">
+                <img src="imgA/cPriv.png" alt="">
+                <h3>Clases Privadas</h3>
+                <p>1 alumno, 100% personalizada</p>
+                <button onclick="abrirModal('modalPrivadas')" class="btn">Agendar entrevista</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modalPrivadas" class="modal">
+            <div class="modal-content">
+                <span class="cerrar" onclick="cerrarModal('modalPrivadas')">&times;</span>
+                <h2>Agenda tu Entrevista Inicial</h2>
+                <p>Elige tu disponibilidad y te contactaremos para confirmar horario:</p>
+                <form action="https://formsubmit.co/tucorreo@email.com" method="POST">
+                <label>Tu nombre:</label>
+                <input type="text" name="nombre" required>
+                <label>Días disponibles:</label><br>
+                <input type="checkbox" name="dias" value="Lunes"> Lunes
+                <input type="checkbox" name="dias" value="Miércoles"> Miércoles
+                <input type="checkbox" name="dias" value="Viernes"> Viernes<br><br>
+                <label>Horario preferido:</label>
+                <select name="hora">
+                    <option>10:00 AM</option>
+                    <option>1:00 PM</option>
+                    <option>6:00 PM</option>
+                </select><br><br>
+                <button type="submit" class="btn">Agendar</button>
+                </form>
+            </div>
+        </div>
+        
+       <!-- Clases Semi-Privadas -->
+        <div class="card">
+            <div class="card-content">
+                <img src="imgA/cSemiPriv.png" alt="">
+                <h3>Clases Semi-Privadas</h3>
+                <p>2 alumnos</p>
+                <button onclick="abrirModal('modalSemiPrivada')" class="btn">Ver precios</button>
+            </div>
+            </div>
+
+            <div id="modalSemiPrivada" class="modal">
+            <div class="modal-content">
+                <span class="cerrar" onclick="cerrarModal('modalSemiPrivada')">&times;</span>
+                <h2>Clases Semi-Privadas</h2>
+                <p>Calcula tu precio dependiendo del número de sesiones:</p>
+                <label for="sesiones">Sesiones al mes:</label>
+                <input type="number" id="sesiones" name="sesiones" value="4" min="1" max="20" onchange="calcularPrecio()">
+                <p id="resultadoPrecio">Precio estimado: $0 MXN</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <img src="imgA/cEmpresa.png" alt="">
+                <h3>Clases Empresariales</h3>
+                <p>En el lugar de trabajo</p>
+                <a href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20estoy%20interesado%20en%20Clases%20Empresariales" class="btn">Quiero saber más</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <img src="imgA/bsnss.png" alt="">
+                <h3>Business Coaching</h3>
+                <p>Acompañado por un profesional</p>
+                <a href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20estoy%20interesado%20en%20Business%20Coaching" class="btn">Quiero saber más</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <img src="imgA/tradDoc.png" alt="">
+                <h3>Traducción de Documentos</h3>
+                <p>Traducidos por expertos</p>
+                <a href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20estoy%20interesado%20en%20Traducción%20de%20Documentos" class="btn">Quiero saber más</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <img src="imgA/prep.png" alt="">
+                <h3>Preparación</h3>
+                <p>Cambridge, PET, FCE, IELTS, TOEFL, TOEIC</p>
+                <a href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20estoy%20interesado%20en%20Preparación" class="btn">Quiero saber más</a>
+            </div>
+        </div>
+    
+    </div>
+        <!-- Modal oculto -->
+    <div id="modalOnline" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modalOnline')">&times;</span>
+            <h2>Clases Online</h2>
+            <p>Nuestras clases online son 100% en vivo con profesores certificados.</p>
+            <ul>
+            <li>🌐 Niveles: A1 a C2</li>
+            <li>🗓️ Horarios disponibles: lunes a viernes de 8am a 9pm</li>
+            <li>📱 Plataforma: Zoom / Google Meet</li>
+            </ul>
+
+            <!-- BOTONES DE FILTRO -->
+            <div class="filtros-profes">
+                <button onclick="filtrarProfesor('todos')" class="btn">Mostrar Todos</button>
+                <button onclick="filtrarProfesor('Tomás')" class="btn">Tomás</button>
+                <button onclick="filtrarProfesor('Fernando')" class="btn">Fernando</button>
+                <button onclick="filtrarProfesor('Natalia')" class="btn">Natalia</button>
+                <button onclick="filtrarProfesor('Sara')" class="btn">Sara</button>
+            </div>
+
+            <form action="https://formsubmit.co/tucorreo@email.com" method="POST" id="formReserva">
+            <input type="hidden" name="profesor" id="profesorSeleccionado">
+            <input type="hidden" name="dia" id="diaSeleccionado">
+            <input type="hidden" name="hora" id="horaSeleccionada">
+
+            <div class="horario-scroll">
+                <table class="tabla-horario">
+                <thead>
+                    <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+            <tr><td>1:00 PM</td><td class="profe-tomás ocupado" data-profe="Tomás">Lleno</td><td class="profe-sara disponible" data-profe="Sara"><button type="button" class="seleccionar" data-profe="Sara" data-dia="Martes" data-hora="1:00 PM">Reservar Sara</button></td><td class="profe-sara ocupado" data-profe="Sara">Lleno</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td><td class="profe-natalia disponible" data-profe="Natalia"><button type="button" class="seleccionar" data-profe="Natalia" data-dia="Viernes" data-hora="1:00 PM">Reservar Natalia</button></td></tr><tr><td>2:00 PM</td><td class="profe-sara ocupado" data-profe="Sara">Lleno</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td><td class="profe-sara ocupado" data-profe="Sara">Lleno</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td></tr><tr><td>3:00 PM</td><td class="profe-sara ocupado" data-profe="Sara">Lleno</td><td class="profe-fernando ocupado" data-profe="Fernando">Lleno</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td><td class="profe-natalia disponible" data-profe="Natalia"><button type="button" class="seleccionar" data-profe="Natalia" data-dia="Jueves" data-hora="3:00 PM">Reservar Natalia</button></td><td class="profe-fernando disponible" data-profe="Fernando"><button type="button" class="seleccionar" data-profe="Fernando" data-dia="Viernes" data-hora="3:00 PM">Reservar Fernando</button></td></tr><tr><td>4:00 PM</td><td class="profe-tomás ocupado" data-profe="Tomás">Lleno</td><td class="profe-fernando ocupado" data-profe="Fernando">Lleno</td><td class="profe-tomás disponible" data-profe="Tomás"><button type="button" class="seleccionar" data-profe="Tomás" data-dia="Miércoles" data-hora="4:00 PM">Reservar Tomás</button></td><td class="profe-sara disponible" data-profe="Sara"><button type="button" class="seleccionar" data-profe="Sara" data-dia="Jueves" data-hora="4:00 PM">Reservar Sara</button></td><td class="profe-sara disponible" data-profe="Sara"><button type="button" class="seleccionar" data-profe="Sara" data-dia="Viernes" data-hora="4:00 PM">Reservar Sara</button></td></tr><tr><td>5:00 PM</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td><td class="profe-sara ocupado" data-profe="Sara">Lleno</td><td class="profe-fernando disponible" data-profe="Fernando"><button type="button" class="seleccionar" data-profe="Fernando" data-dia="Miércoles" data-hora="5:00 PM">Reservar Fernando</button></td><td class="profe-tomás disponible" data-profe="Tomás"><button type="button" class="seleccionar" data-profe="Tomás" data-dia="Jueves" data-hora="5:00 PM">Reservar Tomás</button></td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td></tr><tr><td>6:00 PM</td><td class="profe-tomás ocupado" data-profe="Tomás">Lleno</td><td class="profe-sara disponible" data-profe="Sara"><button type="button" class="seleccionar" data-profe="Sara" data-dia="Martes" data-hora="6:00 PM">Reservar Sara</button></td><td class="profe-sara ocupado" data-profe="Sara">Lleno</td><td class="profe-tomás ocupado" data-profe="Tomás">Lleno</td><td class="profe-fernando disponible" data-profe="Fernando"><button type="button" class="seleccionar" data-profe="Fernando" data-dia="Viernes" data-hora="6:00 PM">Reservar Fernando</button></td></tr><tr><td>7:00 PM</td><td class="profe-fernando ocupado" data-profe="Fernando">Lleno</td><td class="profe-sara ocupado" data-profe="Sara">Lleno</td><td class="profe-sara disponible" data-profe="Sara"><button type="button" class="seleccionar" data-profe="Sara" data-dia="Miércoles" data-hora="7:00 PM">Reservar Sara</button></td><td class="profe-natalia disponible" data-profe="Natalia"><button type="button" class="seleccionar" data-profe="Natalia" data-dia="Jueves" data-hora="7:00 PM">Reservar Natalia</button></td><td class="profe-fernando disponible" data-profe="Fernando"><button type="button" class="seleccionar" data-profe="Fernando" data-dia="Viernes" data-hora="7:00 PM">Reservar Fernando</button></td></tr><tr><td>8:00 PM</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td><td class="profe-tomás ocupado" data-profe="Tomás">Lleno</td><td class="profe-tomás disponible" data-profe="Tomás"><button type="button" class="seleccionar" data-profe="Tomás" data-dia="Miércoles" data-hora="8:00 PM">Reservar Tomás</button></td><td class="profe-tomás disponible" data-profe="Tomás"><button type="button" class="seleccionar" data-profe="Tomás" data-dia="Jueves" data-hora="8:00 PM">Reservar Tomás</button></td><td class="profe-fernando disponible" data-profe="Fernando"><button type="button" class="seleccionar" data-profe="Fernando" data-dia="Viernes" data-hora="8:00 PM">Reservar Fernando</button></td></tr><tr><td>9:00 PM</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td><td class="profe-sara ocupado" data-profe="Sara">Lleno</td><td class="profe-natalia ocupado" data-profe="Natalia">Lleno</td><td class="profe-sara disponible" data-profe="Sara"><button type="button" class="seleccionar" data-profe="Sara" data-dia="Jueves" data-hora="9:00 PM">Reservar Sara</button></td><td class="profe-fernando disponible" data-profe="Fernando"><button type="button" class="seleccionar" data-profe="Fernando" data-dia="Viernes" data-hora="9:00 PM">Reservar Fernando</button></td></tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div id="datosReserva" style="margin-top: 1rem; text-align: center;">
+                <p><strong>Reservar para:</strong> <span id="resumenReserva">Nada seleccionado</span></p>
+                <button type="submit" class="btn" style="display:none;" id="botonEnviar">Confirmar Reserva</button>
+            </div>
+            </form>
+            </div>
+            <a href="contacto.html" class="btn">Solicita tu clase muestra</a>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    <script src="scripts.js"></script>
+    <p>&copy; 2025 Amil Language Solutions - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
