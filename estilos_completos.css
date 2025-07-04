@@ -296,3 +296,8 @@ header{
     width: 100%;
   }
 }
+
+#start-quiz{
+  background-color: none;
+  margin: 30px;
+}
