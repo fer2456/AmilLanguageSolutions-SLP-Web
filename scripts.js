@@ -58,8 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('questions.json')
       .then(res => res.json())
       .then(data => {
-        questions = data;
-        answers = Array(questions.length).fill(null);
+        /*questions = data;
+        answers = Array(questions.length).fill(null);*/
+        const examLength = 25;      // <- aquí pones 10, 30 o 50
+        questions = shuffle(data).slice(0, examLength);
         current = 0;
         showQuestion();
         resultDiv.innerHTML = '';
