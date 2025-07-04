@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "Hello, ___ name is Anna.",
+    "options": [
+      "My",
+      "Your",
+      "His"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 2,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "I ___ from Mexico.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "She ___ a student.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 4,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "They ___ happy.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "I have ___ apple.",
+    "options": [
+      "a",
+      "an",
+      "the"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "He ___ two brothers.",
+    "options": [
+      "have",
+      "has",
+      "had"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 7,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "This book is ___.",
+    "options": [
+      "small",
+      "smaller",
+      "smallest"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 8,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "There ___ a dog in the garden.",
+    "options": [
+      "is",
+      "are",
+      "be"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "What ___ you doing?",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 10,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "I like ___.",
+    "options": [
+      "play",
+      "to play",
+      "playing"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 11,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "Can you ___ me, please?",
+    "options": [
+      "help",
+      "helps",
+      "helping"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 12,
+    "level": "A1",
+    "type": "multiple-choice",
+    "question": "How ___ apples do you want?",
+    "options": [
+      "many",
+      "much",
+      "a lot"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 13,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "I have lived here ___ 2010.",
+    "options": [
+      "since",
+      "for",
+      "from"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 14,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "She ___ to the gym every day.",
+    "options": [
+      "go",
+      "goes",
+      "going"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "They haven't ___ dinner yet.",
+    "options": [
+      "eat",
+      "eaten",
+      "ate"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 16,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "What time ___ the train leave?",
+    "options": [
+      "do",
+      "does",
+      "did"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 17,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "I usually ___ coffee in the morning.",
+    "options": [
+      "drinks",
+      "drink",
+      "drinking"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 18,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "He is taller ___ his brother.",
+    "options": [
+      "than",
+      "then",
+      "as"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 19,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "We ___ already seen that movie.",
+    "options": [
+      "have",
+      "has",
+      "had"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 20,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "There were ___ people at the party.",
+    "options": [
+      "much",
+      "many",
+      "a lot"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 21,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "She arrived ___ train.",
+    "options": [
+      "by",
+      "in",
+      "on"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 22,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "If I ___ rich, I would travel the world.",
+    "options": [
+      "am",
+      "were",
+      "was"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 23,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "They ___ in London last year.",
+    "options": [
+      "living",
+      "lived",
+      "live"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 24,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "I prefer tea ___ coffee.",
+    "options": [
+      "than",
+      "to",
+      "over"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 25,
+    "level": "A2",
+    "type": "multiple-choice",
+    "question": "He said he ___ come tomorrow.",
+    "options": [
+      "will",
+      "would",
+      "should"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 26,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "By the time we arrived, the concert ___ started.",
+    "options": [
+      "has",
+      "had",
+      "have"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 27,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "No sooner ___ she arrived than it started to rain.",
+    "options": [
+      "had",
+      "have",
+      "has"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 28,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "It's high time you ___ to bed.",
+    "options": [
+      "go",
+      "went",
+      "gone"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 29,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "He would rather ___ at home tonight.",
+    "options": [
+      "stay",
+      "stayed",
+      "stays"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 30,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "I wish I ___ more free time.",
+    "options": [
+      "have",
+      "had",
+      "will have"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 31,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "She insisted that he ___ sooner.",
+    "options": [
+      "leave",
+      "left",
+      "leaves"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 32,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "By next year, they ___ here for a decade.",
+    "options": [
+      "will live",
+      "will have lived",
+      "will have been living"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 33,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "It's no good ___ about it any more.",
+    "options": [
+      "to worry",
+      "worrying",
+      "worried"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 34,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "Had I known, I ___ told you.",
+    "options": [
+      "would",
+      "would have",
+      "had"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 35,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "Despite ___ hard, he didn't pass the exam.",
+    "options": [
+      "working",
+      "worked",
+      "to work"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 36,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "If she ___ earlier, she would have caught the bus.",
+    "options": [
+      "left",
+      "had left",
+      "has left"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 37,
+    "level": "B1",
+    "type": "multiple-choice",
+    "question": "They insisted on ___ at the meeting.",
+    "options": [
+      "being present",
+      "to be present",
+      "present"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 38,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "I suggest that he ___ the report again.",
+    "options": [
+      "reviews",
+      "review",
+      "reviewed"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "He denied ___ the vase.",
+    "options": [
+      "breaking",
+      "broke",
+      "break"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 40,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "No matter ___, she continued working.",
+    "options": [
+      "how tired she was",
+      "tired she was",
+      "was she tired"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 41,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "Rarely ___ someone so talented.",
+    "options": [
+      "I have seen",
+      "have I seen",
+      "I had seen"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 42,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "Had he not been ill, he ___ the match.",
+    "options": [
+      "would win",
+      "would have won",
+      "will have won"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 43,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "She made me ___ all night.",
+    "options": [
+      "to work",
+      "work",
+      "working"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 44,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "He is alleged ___ the company fraud.",
+    "options": [
+      "to have defrauded",
+      "of defrauding",
+      "defrauded"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 45,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "Not only ___ the solution, but she also explained it clearly.",
+    "options": [
+      "she found",
+      "did she find",
+      "she did find"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 46,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "She tends ___ late at night.",
+    "options": [
+      "to study",
+      "study",
+      "studying"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 47,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "It\u2019s time ___ the project.",
+    "options": [
+      "to finish",
+      "finish",
+      "finishing"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 48,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "I\u2019ll call you ___ I arrive.",
+    "options": [
+      "until",
+      "when",
+      "since"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 49,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "Scarcely ___ he entered the room when everyone fell silent.",
+    "options": [
+      "had he entered",
+      "have he entered",
+      "had he been entering"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 50,
+    "level": "B2",
+    "type": "multiple-choice",
+    "question": "Only after ___ his homework did he go out.",
+    "options": [
+      "finishing",
+      "finish",
+      "to finish"
+    ],
+    "answer": 0
+  }
+]
