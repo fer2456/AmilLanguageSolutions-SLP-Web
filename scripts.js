@@ -180,3 +180,112 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.style.display    = 'none';
   }
 });
+// ==============================================
+// 1) Variables globales
+// ==============================================
+let TEACHERS = [];
+let pendingReservation = { prof: null, dia: null, hora: null };
+
+// ==============================================
+// 2) Al cargar el DOM
+// ==============================================
+document.addEventListener('DOMContentLoaded', () => {
+  const profilesContainer = document.getElementById('profiles-container');
+  
+  // 2.1) Carga initial de teachers.json
+  fetch('teachers.json')
+    .then(res => res.json())
+    .then(data => {
+      TEACHERS = data;
+      // Renderiza sección de “Conoce a nuestros profesores”
+      profilesContainer.innerHTML = TEACHERS.map(t => `
+        <div class="teacher-card" id="teacher-${t.id}">
+          <img src="${t.photo}" alt="Foto ${t.name}">
+          <div class="info">
+            <h3>${t.name}</h3>
+            <p>${t.bio}</p>
+            <div class="tags">
+              ${t.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    })
+    .catch(console.error);
+
+  // 2.2) Conecta botones “Reservar X” a mini-modal
+  document.querySelectorAll('.seleccionar').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const prof = btn.dataset.profe;
+      const dia  = btn.dataset.dia;
+      const hora = btn.dataset.hora;
+      pendingReservation = { prof, dia, hora };
+      openMiniModal(prof);
+    });
+  });
+});
+
+// ==============================================
+// 3) Función para manejar clicks en filtros
+// ==============================================
+function handleFilterClick(nombre) {
+  // 3.1) Filtrar la tabla de horario
+  const celdas = document.querySelectorAll('.tabla-horario td[data-profe]');
+  celdas.forEach(celda => {
+    const profe = celda.getAttribute('data-profe');
+    celda.style.display = (nombre === 'todos' || profe === nombre)
+      ? 'table-cell'
+      : 'none';
+  });
+  // Mantener visible la primera columna (horas)
+  document.querySelectorAll('.tabla-horario td:first-child, .tabla-horario th:first-child')
+    .forEach(col => col.style.display = 'table-cell');
+
+  // 3.2) Mostrar mini-modal del profesor filtrado, si no es “todos”
+  if (nombre !== 'todos') {
+    pendingReservation = { prof: nombre, dia: '', hora: '' };
+    openMiniModal(nombre);
+  }
+}
+
+// ==============================================
+// 4) Mini-modal: abrir, cerrar, confirmar y ver perfil
+// ==============================================
+function openMiniModal(profId) {
+  const prof = TEACHERS.find(t => t.id === profId);
+  if (!prof) return alert('Profesor no encontrado');
+  document.getElementById('mini-photo').src = prof.photo;
+  document.getElementById('mini-photo').alt = prof.name;
+  document.getElementById('mini-name').textContent = prof.name;
+  document.getElementById('mini-tags').innerHTML =
+    prof.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+  document.getElementById('mini-teacher-modal').style.display = 'block';
+}
+
+function closeMiniModal() {
+  document.getElementById('mini-teacher-modal').style.display = 'none';
+}
+
+function confirmReservation() {
+  const { prof, dia, hora } = pendingReservation;
+  document.getElementById('profesorSeleccionado').value = prof;
+  document.getElementById('diaSeleccionado').value       = dia;
+  document.getElementById('horaSeleccionada').value     = hora;
+  document.getElementById('resumenReserva').textContent  =
+    dia && hora
+      ? `${prof} – ${dia} a las ${hora}`
+      : prof;
+  document.getElementById('botonEnviar').style.display = 'inline-block';
+  closeMiniModal();
+}
+
+function viewFullProfile() {
+  closeMiniModal();
+  const { prof } = pendingReservation;
+  const el = document.getElementById(`teacher-${prof}`);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.add('highlight');
+  setTimeout(() => el.classList.remove('highlight'), 2000);
+}

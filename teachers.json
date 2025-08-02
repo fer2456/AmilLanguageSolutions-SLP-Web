@@ -1,0 +1,30 @@
+[
+  {
+    "id": "Tomás",
+    "name": "Tomás Luciano Méndez Pérez",
+    "photo": "imgA/profesor-tomas.jpg",
+    "bio": "Especialista en inglés de negocios y preparación de exámenes B2.",
+    "tags": ["Empresarial", "B2", "Certificaciones"]
+  },
+  {
+    "id": "Fernando",
+    "name": "Fernando Otero Muñiz",
+    "photo": "imgA/profesor-fernando.jpg",
+    "bio": "Apasionado por la enseñanza a niños y adolescentes.",
+    "tags": ["Niños", "A1–A2", "Conversación"]
+  },
+  {
+    "id": "Natalia",
+    "name": "Natalia Alarcón",
+    "photo": "imgA/profesora-natalia.jpg",
+    "bio": "Experta en gramática avanzada y redacción académica.",
+    "tags": ["B2–C1", "Escritura", "Académico"]
+  },
+  {
+    "id": "Sara",
+    "name": "Sara",
+    "photo": "imgA/profesora-sara.jpg",
+    "bio": "Profesora nativa japonesa, ofrece cursos de japonés de todos los niveles.",
+    "tags": ["Japonés", "Cultura", "Todos los niveles"]
+  }
+]

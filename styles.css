@@ -133,3 +133,84 @@ footer {
 .activo{
   border-bottom: 3px solid white;
 }
+/* ==== Sección Perfiles de Profesores ==== */
+#teacher-profiles {
+  padding: 2rem 1rem;
+  background: #0d0d0d;
+  color: #eee;
+}
+
+#teacher-profiles h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.teacher-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.teacher-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.teacher-card .info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.teacher-card .info h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.teacher-card .info p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.75rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #4c8cff;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  margin: 0.2rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+
+/* Mini-modal */
+#mini-teacher-modal .modal-content {
+  max-width: 300px;
+  text-align: center;
+}
+#mini-teacher-modal .mini-info img {
+  margin-bottom: 0.5rem;
+}
+#mini-teacher-modal .mini-tags .tag {
+  margin: 0.1rem;
+}
+#mini-teacher-modal .mini-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.btn-secondary {
+  background: #ccc;
+  color: #333;
+}

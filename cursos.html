@@ -45,6 +45,7 @@
         
         <div class="card">
             <div class="card-content">
+                <div id="teacher-detail"></div>
                 <img src="imgA/cOnline.png" alt="">
                 <h3>Clases Online</h3>
                 <p>Sin salir de casa</p>
@@ -216,13 +217,12 @@
 
             <!-- BOTONES DE FILTRO -->
             <div class="filtros-profes">
-                <button onclick="filtrarProfesor('todos')" class="btn">Mostrar Todos</button>
-                <button onclick="filtrarProfesor('Tomás')" class="btn">Tomás</button>
-                <button onclick="filtrarProfesor('Fernando')" class="btn">Fernando</button>
-                <button onclick="filtrarProfesor('Natalia')" class="btn">Natalia</button>
-                <button onclick="filtrarProfesor('Sara')" class="btn">Sara</button>
+            <button class="btn" onclick="handleFilterClick('todos')">Mostrar Todos</button>
+            <button class="btn" onclick="handleFilterClick('Tomás')">Tomás</button>
+            <button class="btn" onclick="handleFilterClick('Fernando')">Fernando</button>
+            <button class="btn" onclick="handleFilterClick('Natalia')">Natalia</button>
+            <button class="btn" onclick="handleFilterClick('Sara')">Sara</button>
             </div>
-
             <form action="https://formsubmit.co/tucorreo@email.com" method="POST" id="formReserva">
             <input type="hidden" name="profesor" id="profesorSeleccionado">
             <input type="hidden" name="dia" id="diaSeleccionado">
@@ -256,7 +256,27 @@
         </div>
     </div>
 </section>
-
+<section id="teacher-profiles">
+  <h2>Conoce a nuestros profesores</h2>
+  <div id="profiles-container" class="profiles-grid">
+    <!-- Aquí irá cada tarjeta -->
+  </div>
+</section>
+<!--minimodal-->
+<div id="mini-teacher-modal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeMiniModal()">&times;</span>
+    <div class="mini-info">
+      <img id="mini-photo" src="" alt="Foto profe" style="width:100px; border-radius:50%;">
+      <h3 id="mini-name"></h3>
+      <div id="mini-tags"></div>
+    </div>
+    <div class="mini-actions">
+      <button onclick="confirmReservation()" class="btn">Confirmar Reserva</button>
+      <button onclick="viewFullProfile()" class="btn btn-secondary">Ver perfil completo</button>
+    </div>
+  </div>
+</div>
   <footer>
     <script src="scripts.js"></script>
     <p>&copy; 2025 Amil Language Solutions - Todos los derechos reservados</p>
